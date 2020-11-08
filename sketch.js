@@ -16,13 +16,15 @@ const Body = Matter.Body;
 function setup() {
 	createCanvas(800, 700);
 
-
+	//createCanvas(1600, 700);
 	engine = Engine.create();
 	world = engine.world;
 
 	//Create the Bodies Here.
 	
 	garbage = new Waste(50, 300, 20, 20);
+
+	//garbage = new Waste(200,450, 20, 20);
 	ground = new Ground(400, 650, 800, 10);
 
 	bin1 = new Bin(600, 552, 200, 10, 90);
@@ -36,7 +38,8 @@ function setup() {
 }
 
 function draw() {
-	background(0);
+	
+  background(230);
 	Engine.update(engine);
 	ground.display();
 	
@@ -44,7 +47,7 @@ function draw() {
 	bin1.display();
 
 
-	drawSprites();
+	//drawSprites();
 
 
 }
