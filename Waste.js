@@ -17,6 +17,8 @@ class Waste{
         var where = this.body.position;
         push();
         translate(where.x, where.y);
+        //rectMode(CENTER)
+       // fill(255,0,255)
         imageMode(CENTER);
         image(this.image, 0, 0, 20, 20);
         pop();
